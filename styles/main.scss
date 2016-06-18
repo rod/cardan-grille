@@ -1,16 +1,5 @@
 @import 'normalize';
-
-$white: #fff;
-$black: #222;
-$transition: all 0.3s ease-in;
-
-html {
-  box-sizing: border-box;
-}
-
-* {
-  box-sizing: inherit;
-}
+@import 'base';
 
 body {
   background: $black;
@@ -20,15 +9,9 @@ body {
   line-height: 1.5;
 }
 
-a,
-a:visited {
-  color: $white;
-  transition: $transition;
-
-  &:hover {
-    background: $white;
-    color: $black;
-  }
+a:hover {
+  background: $white;
+  color: $black;
 }
 
 main {
